@@ -9,7 +9,7 @@ do
     while [ $M -lt 60 ]
     do
         echo $M
-sh: 1: q: not found
+	((M+=1))
     done
     ((H+=1))
 done
