@@ -1,0 +1,20 @@
+#!/usr/bin/env bash
+# This script displays numbers from 1 to 100.
+
+Count=1
+while [ $Count -lt 101 ]
+do
+    if [ $((Count%15)) = 0 ]
+    then
+        echo "FizzBuzz"
+    elif [ $((Count%3)) = 0 ]
+    then
+        echo "Fizz"
+    elif [ $((Count%5)) = 0 ]
+    then
+        echo "Buzz"
+    else
+        echo "$Count"
+    fi
+    ((Count+=1))
+done
