@@ -9,7 +9,7 @@ do
     while [ $M -lt 60 ]
     do
         echo $M
-	let M+=1
+sh: 1: q: not found
     done
-    let H+=1
+    ((H+=1))
 done
