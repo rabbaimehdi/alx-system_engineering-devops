@@ -1,4 +1,5 @@
 #!/usr/bin/env bash
+# Configure the ngnix server, add index page, error page, and header with the hostname
 sudo apt-get update
 sudo apt-get -y install nginx
 
