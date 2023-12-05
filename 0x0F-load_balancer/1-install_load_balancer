@@ -1,5 +1,5 @@
 #!/usr/bin/env bash
-
+# Configure a loadbalancer as a reverse proxy for two web servers
 # Update package lists
 sudo apt update
 
