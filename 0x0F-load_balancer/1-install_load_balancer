@@ -1,4 +1,4 @@
-#!/usr/bin/bash
+#!/usr/bin/env bash
 
 # Update package lists
 sudo apt update
@@ -28,3 +28,6 @@ echo "ENABLED=1" | sudo tee -a /etc/default/haproxy
 
 # Restart HAProxy
 sudo service haproxy restart
+
+
+
