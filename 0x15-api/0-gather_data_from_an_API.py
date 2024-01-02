@@ -20,8 +20,8 @@ def main():
             LIST_OF_COMPLETED_TASK_TITLES.append(task["title"])
 
     print(
-        f"Employee {EMPLOYEE_NAME} is done with\
-        tasks({NUMBER_OF_DONE_TASKS} / {TOTAL_NUMBER_OF_TASKS}): ")
+        f"Employee {EMPLOYEE_NAME} is done with tasks\
+({NUMBER_OF_DONE_TASKS} / {TOTAL_NUMBER_OF_TASKS}): ")
     for completed_task_title in LIST_OF_COMPLETED_TASK_TITLES:
         print(f"\t {completed_task_title}")
 
