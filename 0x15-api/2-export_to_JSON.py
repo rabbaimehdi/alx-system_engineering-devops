@@ -3,9 +3,9 @@
    and exporting data as a json file
 """
 
+import json
 import requests
 from sys import argv, exit
-import json
 
 
 def main():
