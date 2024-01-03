@@ -19,7 +19,8 @@ def main():
     USER_DICT[USER_ID] = []
     for task in response_todos.json():
         USER_DICT[USER_ID].append(
-            {"task": task["title"], "completed": task["completed"], "username": USERNAME})
+            {"task": task["title"],
+             "completed": task["completed"], "username": USERNAME})
     with open(f"{USER_ID}.json", "w") as out:
         json.dump(USER_DICT, out)
 
