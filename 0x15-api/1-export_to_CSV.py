@@ -13,11 +13,12 @@ def main():
     response_todos = requests.get(
         f"https://jsonplaceholder.typicode.com/users/{argv[1]}/todos")
     USERNAME = response_user.json()["name"]
+    USER_ID = argv[1]
     with open(f"{argv[1]}.csv", "w") as out:
         for task in response_todos.json():
             out.write(
                 '"{}","{}","{}","{}"\n'.format(
-                    argv[1],
+                    USER_ID,
                     USERNAME,
                     task['completed'],
                     task['title']))
